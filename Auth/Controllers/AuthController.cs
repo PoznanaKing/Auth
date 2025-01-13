@@ -24,7 +24,12 @@ namespace Auth.Controllers
         [HttpPost("Register")]
         public async Task<ActionResult> RegisterPost(RegisterRequestDto registerRequestDto)
         {
-            return Ok();
+            var result = await auth.Register(registerRequestDto);
+            if (result !=null)
+            {
+                return Ok(result);
+            }
+            return BadRequest();
         }
     }
 }

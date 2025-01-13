@@ -2,6 +2,7 @@
 using Auth.Models;
 using Auth.Services;
 using Auth.Services.IService;
+using Microsoft.AspNetCore.Identity;
 
 namespace Auth
 {
@@ -13,6 +14,11 @@ namespace Auth
 
             builder.Services.AddDbContext<AuthDbContext>();
             builder.Services.AddScoped<IAuth, AuthService>();
+            builder.Services.AddScoped<ITokenGenerator, TokenGenerator>();
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>().AddDefaultTokenProviders();
+
+            builder.Services.Configure<JwtOption>(builder.Configuration.GetSection("AuthSettings:JwtOptions"));
             // Add services to the container.
 
             builder.Services.AddControllers();

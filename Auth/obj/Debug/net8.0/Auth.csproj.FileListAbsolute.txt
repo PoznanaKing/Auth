@@ -141,3 +141,4 @@ C:\GitWorkRepos\Auth\Auth\Auth\bin\Debug\net8.0\Microsoft.IdentityModel.Protocol
 C:\GitWorkRepos\Auth\Auth\Auth\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\GitWorkRepos\Auth\Auth\Auth\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\GitWorkRepos\Auth\Auth\Auth\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\GitWorkRepos\Auth\Auth\Auth\obj\Debug\net8.0\Auth.sourcelink.json
