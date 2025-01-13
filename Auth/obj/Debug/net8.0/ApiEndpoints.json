@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "Auth.Controllers.AuthController",
+    "Method": "LoginPost",
+    "RelativePath": "Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDto",
+        "Type": "Auth.Models.Dtos.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.Controllers.AuthController",
+    "Method": "RegisterPost",
+    "RelativePath": "Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerRequestDto",
+        "Type": "Auth.Models.Dtos.RegisterRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
